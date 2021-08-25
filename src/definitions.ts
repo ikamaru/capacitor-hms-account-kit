@@ -1,3 +1,4 @@
 export interface AccountKitPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  signIn(): Promise<{ username: string,huaweiOpenId:string }>;
+  signOut(): Promise<void>;
 }
